@@ -1,0 +1,29 @@
+﻿<Window x:Class="Library.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400" Background="SkyBlue">
+    <StackPanel>
+        <Image Source="https://img.freepik.com/premium-vector/abstract-white-red-color-line-background-vector-ilustration_54768-306.jpg?w=2000" ></Image>
+        <Label Content="LIBRARY" Margin="20,-200,0,0" FontWeight="Bold" Width="100" FontSize="18"></Label>
+        <StackPanel Orientation="Horizontal" Margin="0,-350,0,0" HorizontalAlignment="Center" Height="146">
+            <Border Width="120" Margin="0,105,0,0" Height="30" BorderBrush="Red" Background="Red" BorderThickness="2" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+                </Border.Effect>
+                <Button Height="30" Width="120" Margin="0,0,0,0" Padding="0,0,0,5" FontWeight="Medium" BorderThickness="0" Content="LOGIN" FontSize="16" Foreground="White" Background="Transparent" Click="Button_Click"></Button>
+            </Border>
+            <Border Width="120" Margin="10,105,0,0" Height="30" BorderBrush="Red" Background="Red" BorderThickness="2" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+                </Border.Effect>
+                <Button Height="30" Width="120" Margin="0,0,0,0" Padding="0,0,0,5"  BorderThickness="0" FontWeight="Medium" Content="REGISTRATION" FontSize="16" Foreground="White" Background="Transparent" Click="Button_Click_1"></Button>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+
+    
+</Window>

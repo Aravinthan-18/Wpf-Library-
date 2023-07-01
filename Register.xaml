@@ -1,0 +1,69 @@
+﻿<Window x:Class="Library.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="Register" Height="600" Width="400" Background="SkyBlue" >
+    <StackPanel Background="Red">
+        <Border  Width="300" Height="539" Background="White" Margin="0,20,0,0"  BorderThickness="5" CornerRadius="15" BorderBrush="GhostWhite">
+            <Border.Effect>
+                <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel Width="300" Height="539" Background="White">
+                <Label Content="REGISTRATION" HorizontalAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="14"></Label>
+                <Border Width="200" Height="25" Margin="0,30,0,0" CornerRadius="10" Background="White" BorderThickness="2" BorderBrush="White">
+                    <Border.Effect>
+                        <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+                    </Border.Effect>
+                    <TextBox Text="NAME" Width="200" FontWeight="Bold" MouseEnter="txtusname_MouseEnter"  x:Name="txtusname" Height="25"  BorderThickness="0"  Margin="0,0,0,0" Padding="70,5,0,0"></TextBox>
+                </Border>
+                <Border Width="200" Margin="0,30,0,0" Height="25" CornerRadius="10" BorderBrush="White" Background="White">
+                    <Border.Effect>
+                        <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+                    </Border.Effect>
+                    <TextBox Text="USER NAME" x:Name="txtname" FontWeight="Bold" BorderThickness="0" MouseEnter="txtname_MouseEnter" Background="Transparent" Width="200" Height="25" Margin="0,0,0,0" Padding="60,5,0,0"></TextBox>
+                </Border>
+                <Border Width="200" Height="25" Margin="0,30,0,0" Background="White" BorderBrush="White" CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+                    </Border.Effect>
+                    <TextBox Text="MAIL ID" x:Name="txtmail"  FontWeight="Bold" MouseEnter="txtmail_MouseEnter" Width="200" Height="25" Background="Transparent" BorderThickness="0"  Margin="0,0,0,0" Padding="70,5,0,0" ></TextBox>
+                </Border>
+                <Border Width="200" Height="25" Margin="0,30,0,0" Background="White" BorderBrush="White" BorderThickness="0" CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+                    </Border.Effect>
+                    <TextBox Text="PASSWORD" x:Name="txtpass" FontWeight="Bold" BorderThickness="0" MouseEnter="txtpass_MouseEnter" Width="200" Height="25" Background="Transparent" Margin="0,0,0,0" Padding="60,5,0,0" ></TextBox>
+                </Border>
+                <Border Width="200" Height="25" Background="White" Margin="0,30,0,0" BorderBrush="White" BorderThickness="0" CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+                    </Border.Effect>
+                    <TextBox Text="CONFORM PASSWORD" x:Name="txtcpass" FontWeight="Bold"  MouseEnter="txtcpass_MouseEnter" Width="200" Height="25" Background="Transparent" BorderBrush="SkyBlue" Margin="0,0,0,0" Padding="40,5,0,0" BorderThickness="0"></TextBox>
+                </Border>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="70" Height="25" Foreground="Black" Content="GENDER" Margin="50,30,0,0" FontSize="12"></Label>
+                    <RadioButton Width="50" Content="MALE" Foreground="Black" Height="20" x:Name="rbmale" Margin="0,35,0,0"></RadioButton>
+                    <RadioButton Width="80" Content="FEMALE" Foreground="Black" Height="20" x:Name="rbfemale" Margin="10,35,0,0"></RadioButton>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,-30,0,0">
+                    <Label Width="70" Height="25" Foreground="Black" Content="LANGUAGE" Margin="50,30,0,0" FontSize="12"></Label>
+                    <CheckBox Width="50" x:Name="chktamil" Content="TAMIL" Foreground="Black" Height="20" Margin="0,35,0,0"></CheckBox>
+                    <CheckBox Width="80" x:Name="chkenglish" Content="ENGLISH" Foreground="Black" Height="20" Margin="10,35,0,0"></CheckBox>
+                </StackPanel>
+                <StackPanel>
+                    <Border Width="100" Height="25" Margin="0,20,0,0" CornerRadius="10" BorderThickness="1" Background="Orange">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Gray" Opacity="0.5" ShadowDepth="10"></DropShadowEffect>
+                        </Border.Effect>
+                        <Button Width="100" Margin="0,0,-2,-2" Content="REGISTER" Click="Button_Click" Padding="0,0,0,3" Foreground="White" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+
+
+</Window>
